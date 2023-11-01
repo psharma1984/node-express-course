@@ -1,0 +1,9 @@
+1. Quickly explain how middleware is used in an Express application... 
+Middleware is used to process requests before they reach route handlers. Global middleware can be used for all routes eg app.use(() => { next()}).
+For a specific route use function arguments as app.get(path,middleware,other parameters)
+
+2. What does CRUD stand for? Create, Read, Update, Delete
+
+3. You are careful to store your sensitive information in a .env file.
+    (a) How do you get your app to access the information in the .env file? Install dotenv package. Call dotenv.config() and then using global process.env 
+    (b) How do you protect the contents of the .env file so that it is not stored in your Github repository? add .env to .gitignore
